@@ -1,0 +1,14 @@
+.wraper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contanier {
+    min-height: 2000px;
+    width: var(--default-layout-width);
+    background-color: beige;
+    display: flex;
+}
+.content {
+    flex: 1;
+}
