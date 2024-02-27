@@ -2,9 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap');
 
 :root {
-    --primary-color: white;
+    --primary-color: fe2c55;
+    --black: #000; // dat de lam theme light dark
+    --text-color: #333;
     --header-height-default-layout: 60px;
-    --default-layout-width: 1150px;
+    --default-layout-width: 1488px;
 }
 html {
     font-size: 62.5%;
@@ -15,8 +17,19 @@ html {
     padding: 0;
 }
 body {
+    color: var(--text-color);
     font-family: 'Montserrat', sans-serif;
     font-size: 1.6rem; // dung rem để khi trinh duyet thay doi kich thuoc thi khong can sưa nhieu
     line-height: 1.5;
     text-rendering: optimizeLegibility; // tới ưu để hiện thị nhanh nh}
+}
+[taxindex],
+button,
+input {
+    border: none;
+    outline: none;
+}
+a[href] {
+    color: var(--text-color);
+    text-decoration: none;
 }
