@@ -2,8 +2,8 @@
     --search-border-radius: 92px;
     --search-padding-top: 10px;
     --search-btn-width: 42px;
-    --search-width: 468px;
     --search-height: 45px;
+    --search-width: 468px;
     --btn-search-width: 50px;
     display: flex;
     justify-content: center;
@@ -38,7 +38,6 @@
     input {
         height: 100%;
         font-size: 1.6rem;
-        background: rgba(22, 24, 35, 0.06);
         background: transparent;
         caret-color: red;
         flex: 1;
@@ -86,4 +85,12 @@
     &:active {
         background-color: rgba(22, 24, 35, 0.06);
     }
+}
+.search-result {
+    width: var(--search-width);
+}
+// popper
+.title-popper {
+    font-size: 1.3rem;
+    padding: 10px;
 }
