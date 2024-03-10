@@ -18,6 +18,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .border-color {
+        border-color: rgba(22, 24, 35, 0.12);
+        color: rgb(22, 24, 35);
+        font-weight: 550;
+        padding: 6px 25px;
+    }
+    .border-color:hover {
+        background-color: rgba(22, 24, 35, 0.03);
+    }
 }
 
 .logo {
@@ -93,4 +102,9 @@
 .title-popper {
     font-size: 1.3rem;
     padding: 10px;
+}
+.action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

@@ -2,7 +2,7 @@ import classNames from 'classnames/bind';
 import styles from './Header.module.scss';
 import images from '../../../../assets/images';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircleXmark, faSpinner, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import { faCircleXmark, faSpinner, faMagnifyingGlass, faPlus } from '@fortawesome/free-solid-svg-icons';
 import Tippy from '@tippyjs/react/headless';
 import { Wrapper as PopperWrapper } from '../../../Popper';
 import { useState } from 'react';
@@ -46,7 +46,19 @@ function Header() {
                     </div>
                 </Tippy>
                 <div className={cx('action')}>
-                    <Button to={'/upload'}>Upload</Button>
+                    <Button outline leftIcon={<FontAwesomeIcon icon={faPlus} />} className={cx('border-color')}>
+                        Tải lên
+                    </Button>
+                    <Button primary>Đăng nhập</Button>
+                    <Button
+                        rounded
+                        disable
+                        onClick={() => {
+                            alert('đ');
+                        }}
+                    >
+                        Tải ứng dụng
+                    </Button>
                 </div>
             </div>
         </header>
