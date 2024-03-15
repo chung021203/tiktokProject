@@ -12,6 +12,7 @@ function Button({
     primary = false,
     outline = false,
     rounded,
+    text,
     size,
     className,
     leftIcon,
@@ -36,6 +37,7 @@ function Button({
         primary,
         outline,
         rounded,
+        text,
         disable,
         [size]: size,
         [className]: className,
@@ -61,7 +63,7 @@ function Button({
     if (disable) {
         Object.keys(props).forEach((key) => {
             if (key.startsWith('on') && typeof props[key] === 'function') {
-                delete props[key];// xóa một thuộc tính trong một obj
+                delete props[key]; // xóa một thuộc tính trong một obj
             }
         });
     }
